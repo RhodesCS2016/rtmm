@@ -323,10 +323,10 @@ public class RTSPServer extends JFrame implements ActionListener {
 		try{
 			RTSPBufferedWriter.write("RTSP/1.0 200 OK"+CRLF);
 			RTSPBufferedWriter.write("CSeq: "+RTSPSeqNb+CRLF);
-			RTSPBufferedWriter.write("Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS"+CRLF);
+			RTSPBufferedWriter.write("Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE"+CRLF);
 			
 			RTSPBufferedWriter.flush();
-			//System.out.println("RTSP Server - Sent response to Client.");
+//			System.out.println("RTSP Server (OPTIONS) - Sent response to Client.");
 		}
 		catch(Exception ex)
 		{
@@ -339,11 +339,24 @@ public class RTSPServer extends JFrame implements ActionListener {
 		try{
 			RTSPBufferedWriter.write("RTSP/1.0 200 OK"+CRLF);
 			RTSPBufferedWriter.write("CSeq: "+RTSPSeqNb+CRLF);
-			RTSPBufferedWriter.write("Date: "+CRLF);
-			RTSPBufferedWriter.write("Content-Type: "+CRLF);
-			RTSPBufferedWriter.write("Content-Length: "+CRLF);
+			RTSPBufferedWriter.write("Date: 18 Apr 2016 16:47:32 GMT+2"+CRLF);
+			RTSPBufferedWriter.write("Content-Type: application/sdp"+CRLF);
+			RTSPBufferedWriter.write("Content-Length: "+VIDEO_LENGTH+CRLF);
+			RTSPBufferedWriter.write(CRLF);
 			
-			
+			RTSPBufferedWriter.write("v=0"+CRLF);
+			RTSPBufferedWriter.write("o=glinklater 1234567890 1234567890 IN IP4 146.231.126.7"+CRLF);
+			RTSPBufferedWriter.write("s=RTSP DESCRIBE"+CRLF);
+			RTSPBufferedWriter.write("i=Random video"+CRLF);
+			RTSPBufferedWriter.write("u=http://localhost/"+CRLF);
+			RTSPBufferedWriter.write("e=g12l4052@campus.ru.ac.za"+0+CRLF);
+			RTSPBufferedWriter.write("c=IN IP4 146.231.126.12/22"+CRLF);
+			RTSPBufferedWriter.write("t=1234567890 1234567890"+CRLF);
+			RTSPBufferedWriter.write("a=recvonly"+CRLF);
+			RTSPBufferedWriter.write("m=audio 3456 RTP/AVP 0"+CRLF);
+			RTSPBufferedWriter.write("m=video 2232 RTP/AVP 31"+CRLF);
+			RTSPBufferedWriter.write("m=whiteboard 32416 UDP WB"+CRLF);
+			RTSPBufferedWriter.write("a=orient:portrait"+CRLF);
 			
 			RTSPBufferedWriter.flush();
 			//System.out.println("RTSP Server - Sent response to Client.");

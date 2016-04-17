@@ -353,16 +353,27 @@ public class RTSPClient {
 	
 	class optionButtonListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
+			RTSPSeqNb++;
 			System.out.println("Getting Options");
+			send_RTSP_request(RTSPRequest.OPTIONS);
 			
-			
+			if (parse_server_response() != 200) {
+				System.err.println("Error fetching optioins");
+			}
 		}
 	}
 	
 	class describeButtonListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
+			RTSPSeqNb++;
 			System.out.println("Getting Describe");
+			send_RTSP_request(RTSPRequest.DESCRIBE);
 			
+			System.out.println("Sent Describe Request");
+			
+			if (parse_server_response() != 200) {
+				System.err.println("Error fetching description");
+			}
 			
 		}
 	}
@@ -422,7 +433,7 @@ public class RTSPClient {
 		try{
 			//parse status line and extract the reply_code:
 			String StatusLine = RTSPBufferedReader.readLine();
-			//System.out.println("RTSP Client - Received from Server:");
+			System.out.println("RTSP Client - Received from Server:");
 			System.out.println(StatusLine);
 
 			StringTokenizer tokens = new StringTokenizer(StatusLine);
@@ -440,8 +451,15 @@ public class RTSPClient {
 
 				//if state == INIT gets the Session Id from the SessionLine
 				tokens = new StringTokenizer(SessionLine);
-				tokens.nextToken(); //skip over the Session:
-				RTSPid = Integer.parseInt(tokens.nextToken());
+				String header = tokens.nextToken(); //skip over the Session:
+				if (header.equals("Date:"))
+					for (int i = 0; i<16; i++) {
+						System.out.println(RTSPBufferedReader.readLine());
+					}
+				else if (!header.equals("Public:"))
+					RTSPid = Integer.parseInt(tokens.nextToken());
+				
+				
 			}
 		}
 		catch(Exception ex)
@@ -465,11 +483,15 @@ public class RTSPClient {
 	{
 		try{
 			//Use the RTSPBufferedWriter to write to the RTSP socket
-
-			//write the request line:
-			String requestLine = request_type.toString()+" " + VideoFileName + " RTSP/1.0"+CRLF;
+			
+			String requestLine;
+			if (request_type == RTSPRequest.OPTIONS) {
+				requestLine = request_type.toString()+" * RTSP/1.0"+CRLF;
+			} else {
+				requestLine = request_type.toString()+" " + VideoFileName + " RTSP/1.0"+CRLF;
+			}
 			RTSPBufferedWriter.write(requestLine);
-			System.out.println(requestLine);
+			System.out.print(requestLine);
 
 			//write the CSeq line: 
 			String cseqLine = "CSeq: "+this.RTSPSeqNb + CRLF;
@@ -481,6 +503,13 @@ public class RTSPClient {
 				String transportLine = "Transport: RTP/UDP; client_port= "+ RTP_RCV_PORT + CRLF;
 				RTSPBufferedWriter.write(transportLine);
 				System.out.println(transportLine);
+			}
+			else if (request_type == RTSPRequest.OPTIONS) {
+				RTSPBufferedWriter.write(CRLF);
+			}
+			else if (request_type == RTSPRequest.DESCRIBE) {
+				RTSPBufferedWriter.write("Accept: application/sdp");
+				RTSPBufferedWriter.write(CRLF);
 			}
 			else{
 				String sessionLine = "Session:"+RTSPid+ CRLF;
