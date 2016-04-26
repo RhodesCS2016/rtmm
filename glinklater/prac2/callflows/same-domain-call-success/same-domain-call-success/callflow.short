@@ -1,0 +1,29 @@
+# Alice sends an INVITE request to the proxy for Bob
+  1 146.231.126.7 Alice   1 172.17.0.3   Local-Kamailio SIP/SDP Request: INVITE sip:bob@rp.rucus.me | 
+# Proxy requires authentication.
+  2   172.17.0.3 Local-Kamailio   2 146.231.126.7 Alice SIP Status: 407 Proxy Authentication Required | 
+  3 146.231.126.7 Alice   3 172.17.0.3   Local-Kamailio SIP Request: ACK sip:bob@rp.rucus.me | 
+# Alice resends with authentication.
+  4 146.231.126.7 Alice   4 172.17.0.3   Local-Kamailio SIP/SDP Request: INVITE sip:bob@rp.rucus.me | 
+  5   172.17.0.3 Local-Kamailio   5 146.231.126.7 Alice SIP Status: 100 trying -- your call is important to us | 
+# Proxy forwards request
+  6   172.17.0.3 Local-Kamailio   6 146.231.126.7 Bob SIP/SDP Request: INVITE sip:bob@146.231.126.7:5063 | 
+# Bob's device recieves request and notifies proxy that it is ringing...
+  7 146.231.126.7 Bob   7 172.17.0.3   Local-Kamailio SIP Status: 100 Trying | 
+  8 146.231.126.7 Bob   8 172.17.0.3   Local-Kamailio SIP Status: 180 Ringing | 
+# ... which in turn notifies Alice that Bob's phone is ringing.
+  9   172.17.0.3 Local-Kamailio   9 146.231.126.7 Alice SIP Status: 180 Ringing | 
+# Bob accepts the call on his device
+ 10 146.231.126.7 Bob  10 172.17.0.3   Local-Kamailio SIP/SDP Status: 200 OK | 
+# Bob's acceptance is passed downstream to Alice
+ 11   172.17.0.3 Local-Kamailio  11 146.231.126.7 Alice SIP/SDP Status: 200 OK | 
+# Alice acknowledges that Bob has picked up his device.
+ 12 146.231.126.7 Alice  12 172.17.0.3   Local-Kamailio SIP Request: ACK sip:bob@146.231.126.7:5063 | 
+ 13   172.17.0.3 Local-Kamailio  13 146.231.126.7 Bob SIP Request: ACK sip:bob@146.231.126.7:5063 | 
+# Conversation happens here...
+# Bob terminates their session.
+ 14 146.231.126.7 Bob  14 172.17.0.3   Local-Kamailio SIP Request: BYE sip:alice@146.231.126.7:5064 | 
+ 15   172.17.0.3 Local-Kamailio  15 146.231.126.7 Alice SIP Request: BYE sip:alice@146.231.126.7:5064 | 
+# Alice acknowledges that the session is terminated.
+ 16 146.231.126.7 Alice  16 172.17.0.3   Local-Kamailio SIP Status: 200 OK | 
+ 17   172.17.0.3 Local-Kamailio  17 146.231.126.7 Bob SIP Status: 200 OK | 

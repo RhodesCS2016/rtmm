@@ -1,0 +1,744 @@
+Frame 1: 415 bytes on wire (3320 bits), 415 bytes captured (3320 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.377667000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.377667000 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 415 bytes (3320 bits)
+    Capture Length: 415 bytes (3320 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:29:df:9a:ef (02:42:29:df:9a:ef), Dst: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+    Destination: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 172.17.0.3 (172.17.0.3)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x68 (DSCP 0x1a: Assured Forwarding 31; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0110 10.. = Differentiated Services Codepoint: Assured Forwarding 31 (0x1a)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 401
+    Identification: 0x79e2 (31202)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x020f [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 172.17.0.3 (172.17.0.3)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: ca-1 (5064), Dst Port: sip (5060)
+    Source port: ca-1 (5064)
+    Destination port: sip (5060)
+    Length: 381
+    Checksum: 0xbe91 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:rp.rucus.me SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:rp.rucus.me
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport;branch=z9hG4bK840155641
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: rport
+            Branch: z9hG4bK840155641
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+        Call-ID: 768922821
+        CSeq: 1 REGISTER
+            Sequence Number: 1
+            Method: REGISTER
+        Contact: <sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b>
+            Contact URI: sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b
+                Contact URI User Part: greg1
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5064
+                Contact URI parameter: line=cb6a2670fa43b4b
+        Max-Forwards: 70
+        User-Agent: Linphone/3.6.1 (eXosip2/4.0.0)
+        Expires: 3600
+        Content-Length: 0
+
+Frame 2: 467 bytes on wire (3736 bits), 467 bytes captured (3736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.377874000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.377874000 seconds
+    [Time delta from previous captured frame: 0.000207000 seconds]
+    [Time delta from previous displayed frame: 0.000207000 seconds]
+    [Time since reference or first frame: 0.000207000 seconds]
+    Frame Number: 2
+    Frame Length: 467 bytes (3736 bits)
+    Capture Length: 467 bytes (3736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:ac:11:00:03 (02:42:ac:11:00:03), Dst: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+    Destination: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 172.17.0.3 (172.17.0.3), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 453
+    Identification: 0xf6f3 (63219)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xc521 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 172.17.0.3 (172.17.0.3)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: ca-1 (5064)
+    Source port: sip (5060)
+    Destination port: ca-1 (5064)
+    Length: 433
+    Checksum: 0xbec5 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (401)
+    Status-Line: SIP/2.0 401 Unauthorized
+        Status-Code: 401
+        [Resent Packet: False]
+        [Request Frame: 1]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport=5064;branch=z9hG4bK840155641;received=146.231.126.7
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: 5064
+            Branch: z9hG4bK840155641
+            Received: 146.231.126.7
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>;tag=65930ee843a785b49cdf62d2011dae81.c888
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 65930ee843a785b49cdf62d2011dae81.c888
+        Call-ID: 768922821
+        CSeq: 1 REGISTER
+            Sequence Number: 1
+            Method: REGISTER
+        WWW-Authenticate: Digest realm="rp.rucus.me", nonce="Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+            Authentication Scheme: Digest
+            Realm: "rp.rucus.me"
+            Nonce Value: "Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+        Server: kamailio (4.4.0 (x86_64/linux))
+        Content-Length: 0
+
+Frame 3: 602 bytes on wire (4816 bits), 602 bytes captured (4816 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.428183000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.428183000 seconds
+    [Time delta from previous captured frame: 0.050309000 seconds]
+    [Time delta from previous displayed frame: 0.050309000 seconds]
+    [Time since reference or first frame: 0.050516000 seconds]
+    Frame Number: 3
+    Frame Length: 602 bytes (4816 bits)
+    Capture Length: 602 bytes (4816 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:29:df:9a:ef (02:42:29:df:9a:ef), Dst: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+    Destination: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 172.17.0.3 (172.17.0.3)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x68 (DSCP 0x1a: Assured Forwarding 31; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0110 10.. = Differentiated Services Codepoint: Assured Forwarding 31 (0x1a)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 588
+    Identification: 0x79ed (31213)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x0149 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 172.17.0.3 (172.17.0.3)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: ca-1 (5064), Dst Port: sip (5060)
+    Source port: ca-1 (5064)
+    Destination port: sip (5060)
+    Length: 568
+    Checksum: 0xbf4c [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:rp.rucus.me SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:rp.rucus.me
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport;branch=z9hG4bK1680045647
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: rport
+            Branch: z9hG4bK1680045647
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+        Call-ID: 768922821
+        CSeq: 2 REGISTER
+            Sequence Number: 2
+            Method: REGISTER
+        Contact: <sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b>
+            Contact URI: sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b
+                Contact URI User Part: greg1
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5064
+                Contact URI parameter: line=cb6a2670fa43b4b
+        Authorization: Digest username="greg1", realm="rp.rucus.me", nonce="Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu", uri="sip:rp.rucus.me", response="4eb66420472ef4b31465f06fcc011b1b", algorithm=MD5
+            Authentication Scheme: Digest
+            Username: "greg1"
+            Realm: "rp.rucus.me"
+            Nonce Value: "Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+            Authentication URI: "sip:rp.rucus.me"
+            Digest Authentication Response: "4eb66420472ef4b31465f06fcc011b1b"
+            Algorithm: MD5
+        Max-Forwards: 70
+        User-Agent: Linphone/3.6.1 (eXosip2/4.0.0)
+        Expires: 3600
+        Content-Length: 0
+
+Frame 4: 468 bytes on wire (3744 bits), 468 bytes captured (3744 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.428992000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.428992000 seconds
+    [Time delta from previous captured frame: 0.000809000 seconds]
+    [Time delta from previous displayed frame: 0.000809000 seconds]
+    [Time since reference or first frame: 0.051325000 seconds]
+    Frame Number: 4
+    Frame Length: 468 bytes (3744 bits)
+    Capture Length: 468 bytes (3744 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:ac:11:00:03 (02:42:ac:11:00:03), Dst: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+    Destination: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 172.17.0.3 (172.17.0.3), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 454
+    Identification: 0xf6fc (63228)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xc517 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 172.17.0.3 (172.17.0.3)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: ca-1 (5064)
+    Source port: sip (5060)
+    Destination port: ca-1 (5064)
+    Length: 434
+    Checksum: 0xbec6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (401)
+    Status-Line: SIP/2.0 401 Unauthorized
+        Status-Code: 401
+        [Resent Packet: False]
+        [Request Frame: 3]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport=5064;branch=z9hG4bK1680045647;received=146.231.126.7
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: 5064
+            Branch: z9hG4bK1680045647
+            Received: 146.231.126.7
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>;tag=65930ee843a785b49cdf62d2011dae81.b366
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 65930ee843a785b49cdf62d2011dae81.b366
+        Call-ID: 768922821
+        CSeq: 2 REGISTER
+            Sequence Number: 2
+            Method: REGISTER
+        WWW-Authenticate: Digest realm="rp.rucus.me", nonce="Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+            Authentication Scheme: Digest
+            Realm: "rp.rucus.me"
+            Nonce Value: "Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+        Server: kamailio (4.4.0 (x86_64/linux))
+        Content-Length: 0
+
+Frame 5: 601 bytes on wire (4808 bits), 601 bytes captured (4808 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.458455000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.458455000 seconds
+    [Time delta from previous captured frame: 0.029463000 seconds]
+    [Time delta from previous displayed frame: 0.029463000 seconds]
+    [Time since reference or first frame: 0.080788000 seconds]
+    Frame Number: 5
+    Frame Length: 601 bytes (4808 bits)
+    Capture Length: 601 bytes (4808 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:29:df:9a:ef (02:42:29:df:9a:ef), Dst: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+    Destination: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 172.17.0.3 (172.17.0.3)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x68 (DSCP 0x1a: Assured Forwarding 31; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0110 10.. = Differentiated Services Codepoint: Assured Forwarding 31 (0x1a)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 587
+    Identification: 0x79ee (31214)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x0149 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 172.17.0.3 (172.17.0.3)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: ca-1 (5064), Dst Port: sip (5060)
+    Source port: ca-1 (5064)
+    Destination port: sip (5060)
+    Length: 567
+    Checksum: 0xbf4b [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:rp.rucus.me SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:rp.rucus.me
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport;branch=z9hG4bK811219919
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: rport
+            Branch: z9hG4bK811219919
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+        Call-ID: 768922821
+        CSeq: 3 REGISTER
+            Sequence Number: 3
+            Method: REGISTER
+        Contact: <sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b>
+            Contact URI: sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b
+                Contact URI User Part: greg1
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5064
+                Contact URI parameter: line=cb6a2670fa43b4b
+        Authorization: Digest username="greg1", realm="rp.rucus.me", nonce="Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu", uri="sip:rp.rucus.me", response="4eb66420472ef4b31465f06fcc011b1b", algorithm=MD5
+            Authentication Scheme: Digest
+            Username: "greg1"
+            Realm: "rp.rucus.me"
+            Nonce Value: "Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+            Authentication URI: "sip:rp.rucus.me"
+            Digest Authentication Response: "4eb66420472ef4b31465f06fcc011b1b"
+            Algorithm: MD5
+        Max-Forwards: 70
+        User-Agent: Linphone/3.6.1 (eXosip2/4.0.0)
+        Expires: 3600
+        Content-Length: 0
+
+Frame 6: 467 bytes on wire (3736 bits), 467 bytes captured (3736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.459244000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.459244000 seconds
+    [Time delta from previous captured frame: 0.000789000 seconds]
+    [Time delta from previous displayed frame: 0.000789000 seconds]
+    [Time since reference or first frame: 0.081577000 seconds]
+    Frame Number: 6
+    Frame Length: 467 bytes (3736 bits)
+    Capture Length: 467 bytes (3736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:ac:11:00:03 (02:42:ac:11:00:03), Dst: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+    Destination: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 172.17.0.3 (172.17.0.3), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 453
+    Identification: 0xf703 (63235)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xc511 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 172.17.0.3 (172.17.0.3)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: ca-1 (5064)
+    Source port: sip (5060)
+    Destination port: ca-1 (5064)
+    Length: 433
+    Checksum: 0xbec5 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (401)
+    Status-Line: SIP/2.0 401 Unauthorized
+        Status-Code: 401
+        [Resent Packet: False]
+        [Request Frame: 5]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport=5064;branch=z9hG4bK811219919;received=146.231.126.7
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: 5064
+            Branch: z9hG4bK811219919
+            Received: 146.231.126.7
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>;tag=65930ee843a785b49cdf62d2011dae81.65e8
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 65930ee843a785b49cdf62d2011dae81.65e8
+        Call-ID: 768922821
+        CSeq: 3 REGISTER
+            Sequence Number: 3
+            Method: REGISTER
+        WWW-Authenticate: Digest realm="rp.rucus.me", nonce="Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+            Authentication Scheme: Digest
+            Realm: "rp.rucus.me"
+            Nonce Value: "Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+        Server: kamailio (4.4.0 (x86_64/linux))
+        Content-Length: 0
+
+Frame 7: 601 bytes on wire (4808 bits), 601 bytes captured (4808 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.488826000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.488826000 seconds
+    [Time delta from previous captured frame: 0.029582000 seconds]
+    [Time delta from previous displayed frame: 0.029582000 seconds]
+    [Time since reference or first frame: 0.111159000 seconds]
+    Frame Number: 7
+    Frame Length: 601 bytes (4808 bits)
+    Capture Length: 601 bytes (4808 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:29:df:9a:ef (02:42:29:df:9a:ef), Dst: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+    Destination: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 172.17.0.3 (172.17.0.3)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x68 (DSCP 0x1a: Assured Forwarding 31; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0110 10.. = Differentiated Services Codepoint: Assured Forwarding 31 (0x1a)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 587
+    Identification: 0x79f2 (31218)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x0145 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 172.17.0.3 (172.17.0.3)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: ca-1 (5064), Dst Port: sip (5060)
+    Source port: ca-1 (5064)
+    Destination port: sip (5060)
+    Length: 567
+    Checksum: 0xbf4b [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:rp.rucus.me SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:rp.rucus.me
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport;branch=z9hG4bK225361740
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: rport
+            Branch: z9hG4bK225361740
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+        Call-ID: 768922821
+        CSeq: 4 REGISTER
+            Sequence Number: 4
+            Method: REGISTER
+        Contact: <sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b>
+            Contact URI: sip:greg1@146.231.126.7:5064;line=cb6a2670fa43b4b
+                Contact URI User Part: greg1
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5064
+                Contact URI parameter: line=cb6a2670fa43b4b
+        Authorization: Digest username="greg1", realm="rp.rucus.me", nonce="Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu", uri="sip:rp.rucus.me", response="4eb66420472ef4b31465f06fcc011b1b", algorithm=MD5
+            Authentication Scheme: Digest
+            Username: "greg1"
+            Realm: "rp.rucus.me"
+            Nonce Value: "Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+            Authentication URI: "sip:rp.rucus.me"
+            Digest Authentication Response: "4eb66420472ef4b31465f06fcc011b1b"
+            Algorithm: MD5
+        Max-Forwards: 70
+        User-Agent: Linphone/3.6.1 (eXosip2/4.0.0)
+        Expires: 3600
+        Content-Length: 0
+
+Frame 8: 467 bytes on wire (3736 bits), 467 bytes captured (3736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:33:02.489579000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461673982.489579000 seconds
+    [Time delta from previous captured frame: 0.000753000 seconds]
+    [Time delta from previous displayed frame: 0.000753000 seconds]
+    [Time since reference or first frame: 0.111912000 seconds]
+    Frame Number: 8
+    Frame Length: 467 bytes (3736 bits)
+    Capture Length: 467 bytes (3736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:ac:11:00:03 (02:42:ac:11:00:03), Dst: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+    Destination: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 172.17.0.3 (172.17.0.3), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 453
+    Identification: 0xf70b (63243)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xc509 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 172.17.0.3 (172.17.0.3)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: ca-1 (5064)
+    Source port: sip (5060)
+    Destination port: ca-1 (5064)
+    Length: 433
+    Checksum: 0xbec5 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (401)
+    Status-Line: SIP/2.0 401 Unauthorized
+        Status-Code: 401
+        [Resent Packet: False]
+        [Request Frame: 7]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5064;rport=5064;branch=z9hG4bK225361740;received=146.231.126.7
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5064
+            RPort: 5064
+            Branch: z9hG4bK225361740
+            Received: 146.231.126.7
+        From: <sip:greg1@rp.rucus.me>;tag=101025493
+            SIP from address: sip:greg1@rp.rucus.me
+                SIP from address User Part: greg1
+                SIP from address Host Part: rp.rucus.me
+            SIP from tag: 101025493
+        To: <sip:greg1@rp.rucus.me>;tag=65930ee843a785b49cdf62d2011dae81.d8da
+            SIP to address: sip:greg1@rp.rucus.me
+                SIP to address User Part: greg1
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 65930ee843a785b49cdf62d2011dae81.d8da
+        Call-ID: 768922821
+        CSeq: 4 REGISTER
+            Sequence Number: 4
+            Method: REGISTER
+        WWW-Authenticate: Digest realm="rp.rucus.me", nonce="Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+            Authentication Scheme: Digest
+            Realm: "rp.rucus.me"
+            Nonce Value: "Vx9hKlcfX/5b6MvlsmxnI7A02CB3rYQu"
+        Server: kamailio (4.4.0 (x86_64/linux))
+        Content-Length: 0
+

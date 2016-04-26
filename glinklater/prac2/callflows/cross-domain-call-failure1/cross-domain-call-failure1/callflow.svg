@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- lookup['146.231.126.7:Alice'] = 0 -->
+<!-- lookup['172.17.0.3:Local-Kamailio'] = 1 -->
+<!-- lookup['146.231.121.130:Extern-Kamailio'] = 2 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="484" viewBox="0 0 600 484">
+<defs>
+<style type="text/css"><![CDATA[
+ .traceline { stroke-width: 1pt; stroke:black; }
+ .pkt-text { color: red; font-family: Trebuchet MS,Helvetica, sans-serif;
+            font-size: 8pt; stroke: none; fill: black;}
+ .comment-text { color: black; font-family: Trebuchet MS,Helvetica, sans-serif;
+            font-size: 9pt; font-style: italic; stroke: none; fill: green;}
+ .host-text { color: black; font-family: Trebuchet MS,Helvetica,sans-serif;
+             font-size: 10pt; stroke:none; fill:blue;}
+ .title-text { color: black; font-family: Trebuchet MS,Helvetica,sans-serif;
+              font-size:16pt; stroke:none; fill:black;}
+ .label { color: blue; text-anchor: middle ; }
+ .arrowhead { stroke-width: 0.5pt;stroke:black; }
+ .element-line { stroke-width: 0.25pt; stroke: black; }
+ .link { color: blue; font-family: Trebuchet MS,Helvetica, sans-serif;
+		font-size: 9pt; text-decoration: underline; fill: blue;}
+ ]]></style>
+</defs>
+<text x="300" y="25" class="label title-text">Cross Domain Callflow - Failed Call 1</text>
+<text x="100" y="58" class="label host-text">146.231.126.7:Alice</text>
+<line x1="100" y1="60" x2="100" y2="484" class="element-line" />
+<text x="300" y="43" class="label host-text">172.17.0.3:Local-Kamailio</text>
+<line x1="300" y1="60" x2="300" y2="484" class="element-line" />
+<text x="500" y="58" class="label host-text">146.231.121.130:Extern-Kamailio</text>
+<line x1="500" y1="60" x2="500" y2="484" class="element-line" />
+<text x="50" y="84" class="comment-text"> Alice tries to make a call to Bob (who is registered on another domain); however she mistypes his name.</text>
+<text x="50" y="108" class="pkt-text">1</text>
+<line x1="100" y1="108" x2="300" y2="108" class="traceline" style="stroke: black;"/>
+<polygon points="300,108 295,105 297,108 295,111" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame1.html" target="_blank">
+<text x="110" y="104" class="pkt-text"> INVITE sip:not-bob@s11pd011-19.ict.ru.ac.za |</text>
+</a>
+<text x="50" y="132" class="pkt-text">2</text>
+<line x1="300" y1="132" x2="100" y2="132" class="traceline" style="stroke: black;"/>
+<polygon points="100,132 105,129 103,132 105,135" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame2.html" target="_blank">
+<text x="110" y="128" class="pkt-text"> 407 Proxy Authentication Required |</text>
+</a>
+<text x="50" y="156" class="pkt-text">3</text>
+<line x1="100" y1="156" x2="300" y2="156" class="traceline" style="stroke: black;"/>
+<polygon points="300,156 295,153 297,156 295,159" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame3.html" target="_blank">
+<text x="110" y="152" class="pkt-text"> ACK sip:not-bob@s11pd011-19.ict.ru.ac.za |</text>
+</a>
+<text x="50" y="180" class="comment-text"> Resend INVITE with authentication.</text>
+<text x="50" y="204" class="pkt-text">4</text>
+<line x1="100" y1="204" x2="300" y2="204" class="traceline" style="stroke: black;"/>
+<polygon points="300,204 295,201 297,204 295,207" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame4.html" target="_blank">
+<text x="110" y="200" class="pkt-text"> INVITE sip:not-bob@s11pd011-19.ict.ru.ac.za |</text>
+</a>
+<text x="50" y="228" class="pkt-text">5</text>
+<line x1="300" y1="228" x2="100" y2="228" class="traceline" style="stroke: black;"/>
+<polygon points="100,228 105,225 103,228 105,231" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame5.html" target="_blank">
+<text x="110" y="224" class="pkt-text"> 100 trying -- your call is important to us |</text>
+</a>
+<text x="50" y="252" class="comment-text"> Forward request to Bob's proxy</text>
+<text x="50" y="276" class="pkt-text">6</text>
+<line x1="300" y1="276" x2="500" y2="276" class="traceline" style="stroke: black;"/>
+<polygon points="500,276 495,273 497,276 495,279" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame6.html" target="_blank">
+<text x="310" y="272" class="pkt-text"> INVITE sip:not-bob@s11pd011-19.ict.ru.ac.za |</text>
+</a>
+<text x="50" y="300" class="comment-text"> User is not found.</text>
+<text x="50" y="324" class="pkt-text">7</text>
+<line x1="500" y1="324" x2="300" y2="324" class="traceline" style="stroke: black;"/>
+<polygon points="300,324 305,321 303,324 305,327" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame7.html" target="_blank">
+<text x="310" y="320" class="pkt-text"> 404 Not Found |</text>
+</a>
+<text x="50" y="348" class="pkt-text">8</text>
+<line x1="300" y1="348" x2="500" y2="348" class="traceline" style="stroke: black;"/>
+<polygon points="500,348 495,345 497,348 495,351" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame8.html" target="_blank">
+<text x="310" y="344" class="pkt-text"> ACK sip:not-bob@s11pd011-19.ict.ru.ac.za |</text>
+</a>
+<text x="50" y="372" class="comment-text"> Alice's proxy notifies her that the user she has requested is not registered on the specified domain.</text>
+<text x="50" y="396" class="pkt-text">9</text>
+<line x1="300" y1="396" x2="100" y2="396" class="traceline" style="stroke: black;"/>
+<polygon points="100,396 105,393 103,396 105,399" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame9.html" target="_blank">
+<text x="110" y="392" class="pkt-text"> 404 Not Found |</text>
+</a>
+<text x="50" y="420" class="comment-text"> Alice's device acknowledges that she has been notified.</text>
+<text x="50" y="444" class="pkt-text">10</text>
+<line x1="100" y1="444" x2="300" y2="444" class="traceline" style="stroke: black;"/>
+<polygon points="300,444 295,441 297,444 295,447" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame10.html" target="_blank">
+<text x="110" y="440" class="pkt-text"> ACK sip:not-bob@s11pd011-19.ict.ru.ac.za |</text>
+</a>
+</svg>

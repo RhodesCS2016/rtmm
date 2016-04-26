@@ -1,0 +1,1515 @@
+Frame 1: 1071 bytes on wire (8568 bits), 1071 bytes captured (8568 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.663109000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.663109000 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 1071 bytes (8568 bits)
+    Capture Length: 1071 bytes (8568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip:sdp]
+Ethernet II, Src: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a), Dst: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+    Destination: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 146.231.121.130 (146.231.121.130)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 1057
+    Identification: 0x8733 (34611)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x9240 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 146.231.121.130 (146.231.121.130)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: 5063 (5063), Dst Port: sip (5060)
+    Source port: 5063 (5063)
+    Destination port: sip (5060)
+    Length: 1037
+    Checksum: 0x2177 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:greg3@rp.rucus.me SIP/2.0
+        Method: INVITE
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5063;rport;branch=z9hG4bKPjc458fb89-9af2-45e6-8144-bb4620361532
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            RPort: rport
+            Branch: z9hG4bKPjc458fb89-9af2-45e6-8144-bb4620361532
+        Max-Forwards: 70
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+        Contact: <sip:greg@146.231.126.7:5063>
+            Contact URI: sip:greg@146.231.126.7:5063
+                Contact URI User Part: greg
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5063
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8216 INVITE
+            Sequence Number: 8216
+            Method: INVITE
+        Route: <sip:s11pd011-19.ict.ru.ac.za;lr>
+            Route URI: sip:s11pd011-19.ict.ru.ac.za;lr
+                Route Host Part: s11pd011-19.ict.ru.ac.za
+                Route URI parameter: lr
+        Subject: Phone call
+        Allow: PRACK, SUBSCRIBE, NOTIFY, REFER, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, OPTIONS, MESSAGE, PUBLISH
+        Supported: replaces, 100rel
+        Content-Type: application/sdp
+        Content-Length:   403
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): Styx-PC 3670663519 0 IN IP4 146.231.126.7
+                Owner Username: Styx-PC
+                Session ID: 3670663519
+                Session Version: 0
+                Owner Network Type: IN
+                Owner Address Type: IP4
+                Owner Address: 146.231.126.7
+            Session Name (s): sflphone
+            Connection Information (c): IN IP4 146.231.126.7
+                Connection Network Type: IN
+                Connection Address Type: IP4
+                Connection Address: 146.231.126.7
+            Time Description, active time (t): 0 0
+                Session Start Time: 0
+                Session Stop Time: 0
+            Media Description, name and address (m): audio 19862 RTP/AVP 0 3 8 9 110 111 112 101
+                Media Type: audio
+                Media Port: 19862
+                Media Protocol: RTP/AVP
+                Media Format: ITU-T G.711 PCMU
+                Media Format: GSM 06.10
+                Media Format: ITU-T G.711 PCMA
+                Media Format: ITU-T G.722
+                Media Format: DynamicRTP-Type-110
+                Media Format: DynamicRTP-Type-111
+                Media Format: DynamicRTP-Type-112
+                Media Format: DynamicRTP-Type-101
+            Media Attribute (a): rtpmap:0 PCMU/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 0
+                MIME Type: PCMU
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:3 GSM/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 3
+                MIME Type: GSM
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:8 PCMA/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 8
+                MIME Type: PCMA
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:9 G722/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 9
+                MIME Type: G722
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:110 speex/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 110
+                MIME Type: speex
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:111 speex/16000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 111
+                MIME Type: speex
+                Sample Rate: 16000
+            Media Attribute (a): rtpmap:112 speex/32000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 112
+                MIME Type: speex
+                Sample Rate: 32000
+            Media Attribute (a): sendrecv
+            Media Attribute (a): rtpmap:101 telephone-event/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 101
+                MIME Type: telephone-event
+                Sample Rate: 8000
+            Media Attribute (a): fmtp:101 0-15
+                Media Attribute Fieldname: fmtp
+                Media Format: 101 [telephone-event]
+                Media format specific parameters: 0-15
+            Media Attribute (a): rtcp:19863 IN IP4 146.231.126.7
+                Media Attribute Fieldname: rtcp
+                Media Attribute Value: 19863 IN IP4 146.231.126.7
+
+Frame 2: 595 bytes on wire (4760 bits), 595 bytes captured (4760 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.663466000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.663466000 seconds
+    [Time delta from previous captured frame: 0.000357000 seconds]
+    [Time delta from previous displayed frame: 0.000357000 seconds]
+    [Time since reference or first frame: 0.000357000 seconds]
+    Frame Number: 2
+    Frame Length: 595 bytes (4760 bits)
+    Capture Length: 595 bytes (4760 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: SuperMic_a8:42:86 (00:25:90:a8:42:86), Dst: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+    Destination: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.121.130 (146.231.121.130), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 581
+    Identification: 0x820a (33290)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xd935 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.121.130 (146.231.121.130)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: 5063 (5063)
+    Source port: sip (5060)
+    Destination port: 5063 (5063)
+    Length: 561
+    Checksum: 0x8054 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (407)
+    Status-Line: SIP/2.0 407 Proxy Authentication Required
+        Status-Code: 407
+        [Resent Packet: False]
+        [Request Frame: 1]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5063;rport=5063;branch=z9hG4bKPjc458fb89-9af2-45e6-8144-bb4620361532;received=146.231.126.7
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            RPort: 5063
+            Branch: z9hG4bKPjc458fb89-9af2-45e6-8144-bb4620361532
+            Received: 146.231.126.7
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=290e085bfe74927d69ec2178766c5f7f.2d6f
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 290e085bfe74927d69ec2178766c5f7f.2d6f
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8216 INVITE
+            Sequence Number: 8216
+            Method: INVITE
+        Proxy-Authenticate: Digest realm="s11pd011-19.ict.ru.ac.za", nonce="Vx9kE1cfYufo08C0Jof4f1rwcryVy5XZ"
+            Authentication Scheme: Digest
+            Realm: "s11pd011-19.ict.ru.ac.za"
+            Nonce Value: "Vx9kE1cfYufo08C0Jof4f1rwcryVy5XZ"
+        Server: kamailio (4.3.5 (x86_64/linux))
+        Content-Length: 0
+
+Frame 3: 473 bytes on wire (3784 bits), 473 bytes captured (3784 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.663576000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.663576000 seconds
+    [Time delta from previous captured frame: 0.000110000 seconds]
+    [Time delta from previous displayed frame: 0.000110000 seconds]
+    [Time since reference or first frame: 0.000467000 seconds]
+    Frame Number: 3
+    Frame Length: 473 bytes (3784 bits)
+    Capture Length: 473 bytes (3784 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a), Dst: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+    Destination: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 146.231.121.130 (146.231.121.130)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 459
+    Identification: 0x8734 (34612)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x9495 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 146.231.121.130 (146.231.121.130)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: 5063 (5063), Dst Port: sip (5060)
+    Source port: 5063 (5063)
+    Destination port: sip (5060)
+    Length: 439
+    Checksum: 0x1f21 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (ACK)
+    Request-Line: ACK sip:greg3@rp.rucus.me SIP/2.0
+        Method: ACK
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+        [Request Frame: 1]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5063;rport;branch=z9hG4bKPjc458fb89-9af2-45e6-8144-bb4620361532
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            RPort: rport
+            Branch: z9hG4bKPjc458fb89-9af2-45e6-8144-bb4620361532
+        Max-Forwards: 70
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=290e085bfe74927d69ec2178766c5f7f.2d6f
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 290e085bfe74927d69ec2178766c5f7f.2d6f
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8216 ACK
+            Sequence Number: 8216
+            Method: ACK
+        Route: <sip:s11pd011-19.ict.ru.ac.za;lr>
+            Route URI: sip:s11pd011-19.ict.ru.ac.za;lr
+                Route Host Part: s11pd011-19.ict.ru.ac.za
+                Route URI parameter: lr
+        Content-Length:  0
+
+Frame 4: 1266 bytes on wire (10128 bits), 1266 bytes captured (10128 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.663648000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.663648000 seconds
+    [Time delta from previous captured frame: 0.000072000 seconds]
+    [Time delta from previous displayed frame: 0.000072000 seconds]
+    [Time since reference or first frame: 0.000539000 seconds]
+    Frame Number: 4
+    Frame Length: 1266 bytes (10128 bits)
+    Capture Length: 1266 bytes (10128 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip:sdp]
+Ethernet II, Src: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a), Dst: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+    Destination: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 146.231.121.130 (146.231.121.130)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 1252
+    Identification: 0x8735 (34613)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x917b [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 146.231.121.130 (146.231.121.130)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: 5063 (5063), Dst Port: sip (5060)
+    Source port: 5063 (5063)
+    Destination port: sip (5060)
+    Length: 1232
+    Checksum: 0x223a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:greg3@rp.rucus.me SIP/2.0
+        Method: INVITE
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5063;rport;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            RPort: rport
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+        Max-Forwards: 70
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+        Contact: <sip:greg@146.231.126.7:5063>
+            Contact URI: sip:greg@146.231.126.7:5063
+                Contact URI User Part: greg
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5063
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 INVITE
+            Sequence Number: 8217
+            Method: INVITE
+        Route: <sip:s11pd011-19.ict.ru.ac.za;lr>
+            Route URI: sip:s11pd011-19.ict.ru.ac.za;lr
+                Route Host Part: s11pd011-19.ict.ru.ac.za
+                Route URI parameter: lr
+        Subject: Phone call
+        Allow: PRACK, SUBSCRIBE, NOTIFY, REFER, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, OPTIONS, MESSAGE, PUBLISH
+        Supported: replaces, 100rel
+        Proxy-Authorization: Digest username="greg", realm="s11pd011-19.ict.ru.ac.za", nonce="Vx9kE1cfYufo08C0Jof4f1rwcryVy5XZ", uri="sip:greg3@rp.rucus.me", response="6759633f6290449a1c23de5932790e28"
+            Authentication Scheme: Digest
+            Username: "greg"
+            Realm: "s11pd011-19.ict.ru.ac.za"
+            Nonce Value: "Vx9kE1cfYufo08C0Jof4f1rwcryVy5XZ"
+            Authentication URI: "sip:greg3@rp.rucus.me"
+            Digest Authentication Response: "6759633f6290449a1c23de5932790e28"
+        Content-Type: application/sdp
+        Content-Length:   403
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): Styx-PC 3670663519 0 IN IP4 146.231.126.7
+                Owner Username: Styx-PC
+                Session ID: 3670663519
+                Session Version: 0
+                Owner Network Type: IN
+                Owner Address Type: IP4
+                Owner Address: 146.231.126.7
+            Session Name (s): sflphone
+            Connection Information (c): IN IP4 146.231.126.7
+                Connection Network Type: IN
+                Connection Address Type: IP4
+                Connection Address: 146.231.126.7
+            Time Description, active time (t): 0 0
+                Session Start Time: 0
+                Session Stop Time: 0
+            Media Description, name and address (m): audio 19862 RTP/AVP 0 3 8 9 110 111 112 101
+                Media Type: audio
+                Media Port: 19862
+                Media Protocol: RTP/AVP
+                Media Format: ITU-T G.711 PCMU
+                Media Format: GSM 06.10
+                Media Format: ITU-T G.711 PCMA
+                Media Format: ITU-T G.722
+                Media Format: DynamicRTP-Type-110
+                Media Format: DynamicRTP-Type-111
+                Media Format: DynamicRTP-Type-112
+                Media Format: DynamicRTP-Type-101
+            Media Attribute (a): rtpmap:0 PCMU/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 0
+                MIME Type: PCMU
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:3 GSM/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 3
+                MIME Type: GSM
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:8 PCMA/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 8
+                MIME Type: PCMA
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:9 G722/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 9
+                MIME Type: G722
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:110 speex/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 110
+                MIME Type: speex
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:111 speex/16000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 111
+                MIME Type: speex
+                Sample Rate: 16000
+            Media Attribute (a): rtpmap:112 speex/32000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 112
+                MIME Type: speex
+                Sample Rate: 32000
+            Media Attribute (a): sendrecv
+            Media Attribute (a): rtpmap:101 telephone-event/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 101
+                MIME Type: telephone-event
+                Sample Rate: 8000
+            Media Attribute (a): fmtp:101 0-15
+                Media Attribute Fieldname: fmtp
+                Media Format: 101 [telephone-event]
+                Media format specific parameters: 0-15
+            Media Attribute (a): rtcp:19863 IN IP4 146.231.126.7
+                Media Attribute Fieldname: rtcp
+                Media Attribute Value: 19863 IN IP4 146.231.126.7
+
+Frame 5: 459 bytes on wire (3672 bits), 459 bytes captured (3672 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.664194000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.664194000 seconds
+    [Time delta from previous captured frame: 0.000546000 seconds]
+    [Time delta from previous displayed frame: 0.000546000 seconds]
+    [Time since reference or first frame: 0.001085000 seconds]
+    Frame Number: 5
+    Frame Length: 459 bytes (3672 bits)
+    Capture Length: 459 bytes (3672 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: SuperMic_a8:42:86 (00:25:90:a8:42:86), Dst: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+    Destination: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.121.130 (146.231.121.130), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 445
+    Identification: 0x820b (33291)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xd9bc [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.121.130 (146.231.121.130)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: 5063 (5063)
+    Source port: sip (5060)
+    Destination port: 5063 (5063)
+    Length: 425
+    Checksum: 0xb27c [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (100)
+    Status-Line: SIP/2.0 100 trying -- your call is important to us
+        Status-Code: 100
+        [Resent Packet: False]
+        [Request Frame: 4]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5063;rport=5063;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784;received=146.231.126.7
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            RPort: 5063
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Received: 146.231.126.7
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 INVITE
+            Sequence Number: 8217
+            Method: INVITE
+        Server: kamailio (4.3.5 (x86_64/linux))
+        Content-Length: 0
+
+Frame 6: 1202 bytes on wire (9616 bits), 1202 bytes captured (9616 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665239000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665239000 seconds
+    [Time delta from previous captured frame: 0.001045000 seconds]
+    [Time delta from previous displayed frame: 0.001045000 seconds]
+    [Time since reference or first frame: 0.002130000 seconds]
+    Frame Number: 6
+    Frame Length: 1202 bytes (9616 bits)
+    Capture Length: 1202 bytes (9616 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip:sdp]
+Ethernet II, Src: SuperMic_a8:42:86 (00:25:90:a8:42:86), Dst: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+    Destination: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.121.130 (146.231.121.130), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 1188
+    Identification: 0x820c (33292)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xd6d4 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.121.130 (146.231.121.130)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: sip (5060)
+    Source port: sip (5060)
+    Destination port: sip (5060)
+    Length: 1168
+    Checksum: 0x1d39 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:greg3@rp.rucus.me SIP/2.0
+        Method: INVITE
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Record-Route: <sip:146.231.121.130;lr>
+            Record-Route URI: sip:146.231.121.130;lr
+                Record-Route Host Part: 146.231.121.130
+                Record-Route URI parameter: lr
+        Via: SIP/2.0/UDP 146.231.121.130;branch=z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+            Transport: UDP
+            Sent-by Address: 146.231.121.130
+            Branch: z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+        Via: SIP/2.0/UDP 146.231.126.7:5063;received=146.231.126.7;rport=5063;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            Received: 146.231.126.7
+            RPort: 5063
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+        Max-Forwards: 69
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+        Contact: <sip:greg@146.231.126.7:5063>
+            Contact URI: sip:greg@146.231.126.7:5063
+                Contact URI User Part: greg
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5063
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 INVITE
+            Sequence Number: 8217
+            Method: INVITE
+        Subject: Phone call
+        Allow: PRACK, SUBSCRIBE, NOTIFY, REFER, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, OPTIONS, MESSAGE, PUBLISH
+        Supported: replaces, 100rel
+        Content-Type: application/sdp
+        Content-Length:   403
+        P-hint: outbound
+            [Expert Info (Note/Undecoded): Unrecognised SIP header (P-hint)]
+                [Message: Unrecognised SIP header (P-hint)]
+                [Severity level: Note]
+                [Group: Undecoded]
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): Styx-PC 3670663519 0 IN IP4 146.231.126.7
+                Owner Username: Styx-PC
+                Session ID: 3670663519
+                Session Version: 0
+                Owner Network Type: IN
+                Owner Address Type: IP4
+                Owner Address: 146.231.126.7
+            Session Name (s): sflphone
+            Connection Information (c): IN IP4 146.231.126.7
+                Connection Network Type: IN
+                Connection Address Type: IP4
+                Connection Address: 146.231.126.7
+            Time Description, active time (t): 0 0
+                Session Start Time: 0
+                Session Stop Time: 0
+            Media Description, name and address (m): audio 19862 RTP/AVP 0 3 8 9 110 111 112 101
+                Media Type: audio
+                Media Port: 19862
+                Media Protocol: RTP/AVP
+                Media Format: ITU-T G.711 PCMU
+                Media Format: GSM 06.10
+                Media Format: ITU-T G.711 PCMA
+                Media Format: ITU-T G.722
+                Media Format: DynamicRTP-Type-110
+                Media Format: DynamicRTP-Type-111
+                Media Format: DynamicRTP-Type-112
+                Media Format: DynamicRTP-Type-101
+            Media Attribute (a): rtpmap:0 PCMU/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 0
+                MIME Type: PCMU
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:3 GSM/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 3
+                MIME Type: GSM
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:8 PCMA/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 8
+                MIME Type: PCMA
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:9 G722/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 9
+                MIME Type: G722
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:110 speex/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 110
+                MIME Type: speex
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:111 speex/16000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 111
+                MIME Type: speex
+                Sample Rate: 16000
+            Media Attribute (a): rtpmap:112 speex/32000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 112
+                MIME Type: speex
+                Sample Rate: 32000
+            Media Attribute (a): sendrecv
+            Media Attribute (a): rtpmap:101 telephone-event/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 101
+                MIME Type: telephone-event
+                Sample Rate: 8000
+            Media Attribute (a): fmtp:101 0-15
+                Media Attribute Fieldname: fmtp
+                Media Format: 101 [telephone-event]
+                Media format specific parameters: 0-15
+            Media Attribute (a): rtcp:19863 IN IP4 146.231.126.7
+                Media Attribute Fieldname: rtcp
+                Media Attribute Value: 19863 IN IP4 146.231.126.7
+
+Frame 7: 559 bytes on wire (4472 bits), 559 bytes captured (4472 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665543000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665543000 seconds
+    [Time delta from previous captured frame: 0.000304000 seconds]
+    [Time delta from previous displayed frame: 0.000304000 seconds]
+    [Time since reference or first frame: 0.002434000 seconds]
+    Frame Number: 7
+    Frame Length: 559 bytes (4472 bits)
+    Capture Length: 559 bytes (4472 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a), Dst: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+    Destination: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 146.231.121.130 (146.231.121.130)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 545
+    Identification: 0x2e64 (11876)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 63
+    Protocol: UDP (17)
+    Header checksum: 0x2e00 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 146.231.121.130 (146.231.121.130)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: sip (5060)
+    Source port: sip (5060)
+    Destination port: sip (5060)
+    Length: 525
+    Checksum: 0x1f77 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (404)
+    Status-Line: SIP/2.0 404 Not Found
+        Status-Code: 404
+        [Resent Packet: False]
+        [Request Frame: 6]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.121.130;branch=z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+            Transport: UDP
+            Sent-by Address: 146.231.121.130
+            Branch: z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+        Via: SIP/2.0/UDP 146.231.126.7:5063;received=146.231.126.7;rport=5063;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            Received: 146.231.126.7
+            RPort: 5063
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=4d50a83c5e9b05349d85c6f18723afcc-6a16
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 4d50a83c5e9b05349d85c6f18723afcc-6a16
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 INVITE
+            Sequence Number: 8217
+            Method: INVITE
+        Server: kamailio (4.4.0 (x86_64/linux))
+        Content-Length: 0
+
+Frame 8: 421 bytes on wire (3368 bits), 421 bytes captured (3368 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665860000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665860000 seconds
+    [Time delta from previous captured frame: 0.000317000 seconds]
+    [Time delta from previous displayed frame: 0.000317000 seconds]
+    [Time since reference or first frame: 0.002751000 seconds]
+    Frame Number: 8
+    Frame Length: 421 bytes (3368 bits)
+    Capture Length: 421 bytes (3368 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: SuperMic_a8:42:86 (00:25:90:a8:42:86), Dst: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+    Destination: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.121.130 (146.231.121.130), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 407
+    Identification: 0x820d (33293)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xd9e0 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.121.130 (146.231.121.130)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: sip (5060)
+    Source port: sip (5060)
+    Destination port: sip (5060)
+    Length: 387
+    Checksum: 0xf6c5 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (ACK)
+    Request-Line: ACK sip:greg3@rp.rucus.me SIP/2.0
+        Method: ACK
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+        [Request Frame: 6]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.121.130;branch=z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+            Transport: UDP
+            Sent-by Address: 146.231.121.130
+            Branch: z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+        Max-Forwards: 69
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=4d50a83c5e9b05349d85c6f18723afcc-6a16
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 4d50a83c5e9b05349d85c6f18723afcc-6a16
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 ACK
+            Sequence Number: 8217
+            Method: ACK
+        Content-Length: 0
+
+Frame 9: 472 bytes on wire (3776 bits), 472 bytes captured (3776 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665888000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665888000 seconds
+    [Time delta from previous captured frame: 0.000028000 seconds]
+    [Time delta from previous displayed frame: 0.000028000 seconds]
+    [Time since reference or first frame: 0.002779000 seconds]
+    Frame Number: 9
+    Frame Length: 472 bytes (3776 bits)
+    Capture Length: 472 bytes (3776 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: SuperMic_a8:42:86 (00:25:90:a8:42:86), Dst: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+    Destination: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.121.130 (146.231.121.130), Dst: 146.231.126.7 (146.231.126.7)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 458
+    Identification: 0x820e (33294)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0xd9ac [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.121.130 (146.231.121.130)
+    Destination: 146.231.126.7 (146.231.126.7)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: 5063 (5063)
+    Source port: sip (5060)
+    Destination port: 5063 (5063)
+    Length: 438
+    Checksum: 0xebf7 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (404)
+    Status-Line: SIP/2.0 404 Not Found
+        Status-Code: 404
+        [Resent Packet: False]
+        [Request Frame: 4]
+        [Response Time (ms): 2]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5063;received=146.231.126.7;rport=5063;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            Received: 146.231.126.7
+            RPort: 5063
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=4d50a83c5e9b05349d85c6f18723afcc-6a16
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 4d50a83c5e9b05349d85c6f18723afcc-6a16
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 INVITE
+            Sequence Number: 8217
+            Method: INVITE
+        Server: kamailio (4.4.0 (x86_64/linux))
+        Content-Length: 0
+
+Frame 10: 473 bytes on wire (3784 bits), 473 bytes captured (3784 bits) on interface 1
+    Interface id: 1
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665986000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665986000 seconds
+    [Time delta from previous captured frame: 0.000098000 seconds]
+    [Time delta from previous displayed frame: 0.000098000 seconds]
+    [Time since reference or first frame: 0.002877000 seconds]
+    Frame Number: 10
+    Frame Length: 473 bytes (3784 bits)
+    Capture Length: 473 bytes (3784 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a), Dst: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+    Destination: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        Address: SuperMic_a8:42:86 (00:25:90:a8:42:86)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        Address: ac:9e:17:b3:e6:3a (ac:9e:17:b3:e6:3a)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.126.7 (146.231.126.7), Dst: 146.231.121.130 (146.231.121.130)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 459
+    Identification: 0x8736 (34614)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x9493 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.126.7 (146.231.126.7)
+    Destination: 146.231.121.130 (146.231.121.130)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: 5063 (5063), Dst Port: sip (5060)
+    Source port: 5063 (5063)
+    Destination port: sip (5060)
+    Length: 439
+    Checksum: 0x1f21 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (ACK)
+    Request-Line: ACK sip:greg3@rp.rucus.me SIP/2.0
+        Method: ACK
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+        [Request Frame: 4]
+        [Response Time (ms): 2]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.126.7:5063;rport;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            RPort: rport
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+        Max-Forwards: 70
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=4d50a83c5e9b05349d85c6f18723afcc-6a16
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 4d50a83c5e9b05349d85c6f18723afcc-6a16
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 ACK
+            Sequence Number: 8217
+            Method: ACK
+        Route: <sip:s11pd011-19.ict.ru.ac.za;lr>
+            Route URI: sip:s11pd011-19.ict.ru.ac.za;lr
+                Route Host Part: s11pd011-19.ict.ru.ac.za
+                Route URI parameter: lr
+        Content-Length:  0
+
+Frame 11: 1202 bytes on wire (9616 bits), 1202 bytes captured (9616 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665261000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665261000 seconds
+    [Time delta from previous captured frame: -0.000725000 seconds]
+    [Time delta from previous displayed frame: -0.000725000 seconds]
+    [Time since reference or first frame: 0.002152000 seconds]
+    Frame Number: 11
+    Frame Length: 1202 bytes (9616 bits)
+    Capture Length: 1202 bytes (9616 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip:sdp]
+Ethernet II, Src: 02:42:29:df:9a:ef (02:42:29:df:9a:ef), Dst: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+    Destination: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.121.130 (146.231.121.130), Dst: 172.17.0.3 (172.17.0.3)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 1188
+    Identification: 0x820c (33292)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 63
+    Protocol: UDP (17)
+    Header checksum: 0x3caf [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.121.130 (146.231.121.130)
+    Destination: 172.17.0.3 (172.17.0.3)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: sip (5060)
+    Source port: sip (5060)
+    Destination port: sip (5060)
+    Length: 1168
+    Checksum: 0x8213 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:greg3@rp.rucus.me SIP/2.0
+        Method: INVITE
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+    Message Header
+        Record-Route: <sip:146.231.121.130;lr>
+            Record-Route URI: sip:146.231.121.130;lr
+                Record-Route Host Part: 146.231.121.130
+                Record-Route URI parameter: lr
+        Via: SIP/2.0/UDP 146.231.121.130;branch=z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+            Transport: UDP
+            Sent-by Address: 146.231.121.130
+            Branch: z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+        Via: SIP/2.0/UDP 146.231.126.7:5063;received=146.231.126.7;rport=5063;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            Received: 146.231.126.7
+            RPort: 5063
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+        Max-Forwards: 69
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+        Contact: <sip:greg@146.231.126.7:5063>
+            Contact URI: sip:greg@146.231.126.7:5063
+                Contact URI User Part: greg
+                Contact URI Host Part: 146.231.126.7
+                Contact URI Host Port: 5063
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 INVITE
+            Sequence Number: 8217
+            Method: INVITE
+        Subject: Phone call
+        Allow: PRACK, SUBSCRIBE, NOTIFY, REFER, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, OPTIONS, MESSAGE, PUBLISH
+        Supported: replaces, 100rel
+        Content-Type: application/sdp
+        Content-Length:   403
+        P-hint: outbound
+            [Expert Info (Note/Undecoded): Unrecognised SIP header (P-hint)]
+                [Message: Unrecognised SIP header (P-hint)]
+                [Severity level: Note]
+                [Group: Undecoded]
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): Styx-PC 3670663519 0 IN IP4 146.231.126.7
+                Owner Username: Styx-PC
+                Session ID: 3670663519
+                Session Version: 0
+                Owner Network Type: IN
+                Owner Address Type: IP4
+                Owner Address: 146.231.126.7
+            Session Name (s): sflphone
+            Connection Information (c): IN IP4 146.231.126.7
+                Connection Network Type: IN
+                Connection Address Type: IP4
+                Connection Address: 146.231.126.7
+            Time Description, active time (t): 0 0
+                Session Start Time: 0
+                Session Stop Time: 0
+            Media Description, name and address (m): audio 19862 RTP/AVP 0 3 8 9 110 111 112 101
+                Media Type: audio
+                Media Port: 19862
+                Media Protocol: RTP/AVP
+                Media Format: ITU-T G.711 PCMU
+                Media Format: GSM 06.10
+                Media Format: ITU-T G.711 PCMA
+                Media Format: ITU-T G.722
+                Media Format: DynamicRTP-Type-110
+                Media Format: DynamicRTP-Type-111
+                Media Format: DynamicRTP-Type-112
+                Media Format: DynamicRTP-Type-101
+            Media Attribute (a): rtpmap:0 PCMU/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 0
+                MIME Type: PCMU
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:3 GSM/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 3
+                MIME Type: GSM
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:8 PCMA/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 8
+                MIME Type: PCMA
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:9 G722/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 9
+                MIME Type: G722
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:110 speex/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 110
+                MIME Type: speex
+                Sample Rate: 8000
+            Media Attribute (a): rtpmap:111 speex/16000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 111
+                MIME Type: speex
+                Sample Rate: 16000
+            Media Attribute (a): rtpmap:112 speex/32000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 112
+                MIME Type: speex
+                Sample Rate: 32000
+            Media Attribute (a): sendrecv
+            Media Attribute (a): rtpmap:101 telephone-event/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 101
+                MIME Type: telephone-event
+                Sample Rate: 8000
+            Media Attribute (a): fmtp:101 0-15
+                Media Attribute Fieldname: fmtp
+                Media Format: 101 [telephone-event]
+                Media format specific parameters: 0-15
+            Media Attribute (a): rtcp:19863 IN IP4 146.231.126.7
+                Media Attribute Fieldname: rtcp
+                Media Attribute Value: 19863 IN IP4 146.231.126.7
+
+Frame 12: 559 bytes on wire (4472 bits), 559 bytes captured (4472 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665520000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665520000 seconds
+    [Time delta from previous captured frame: 0.000259000 seconds]
+    [Time delta from previous displayed frame: 0.000259000 seconds]
+    [Time since reference or first frame: 0.002411000 seconds]
+    Frame Number: 12
+    Frame Length: 559 bytes (4472 bits)
+    Capture Length: 559 bytes (4472 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:ac:11:00:03 (02:42:ac:11:00:03), Dst: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+    Destination: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 172.17.0.3 (172.17.0.3), Dst: 146.231.121.130 (146.231.121.130)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 545
+    Identification: 0x2e64 (11876)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: UDP (17)
+    Header checksum: 0x91da [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 172.17.0.3 (172.17.0.3)
+    Destination: 146.231.121.130 (146.231.121.130)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: sip (5060)
+    Source port: sip (5060)
+    Destination port: sip (5060)
+    Length: 525
+    Checksum: 0xba9c [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (404)
+    Status-Line: SIP/2.0 404 Not Found
+        Status-Code: 404
+        [Resent Packet: False]
+        [Request Frame: 11]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.121.130;branch=z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+            Transport: UDP
+            Sent-by Address: 146.231.121.130
+            Branch: z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+        Via: SIP/2.0/UDP 146.231.126.7:5063;received=146.231.126.7;rport=5063;branch=z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+            Transport: UDP
+            Sent-by Address: 146.231.126.7
+            Sent-by port: 5063
+            Received: 146.231.126.7
+            RPort: 5063
+            Branch: z9hG4bKPjf7c79331-cddc-4e9f-8fff-717029db1784
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=4d50a83c5e9b05349d85c6f18723afcc-6a16
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 4d50a83c5e9b05349d85c6f18723afcc-6a16
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 INVITE
+            Sequence Number: 8217
+            Method: INVITE
+        Server: kamailio (4.4.0 (x86_64/linux))
+        Content-Length: 0
+
+Frame 13: 421 bytes on wire (3368 bits), 421 bytes captured (3368 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 26, 2016 14:45:19.665879000 SAST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1461674719.665879000 seconds
+    [Time delta from previous captured frame: 0.000359000 seconds]
+    [Time delta from previous displayed frame: 0.000359000 seconds]
+    [Time since reference or first frame: 0.002770000 seconds]
+    Frame Number: 13
+    Frame Length: 421 bytes (3368 bits)
+    Capture Length: 421 bytes (3368 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:sip]
+Ethernet II, Src: 02:42:29:df:9a:ef (02:42:29:df:9a:ef), Dst: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+    Destination: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        Address: 02:42:ac:11:00:03 (02:42:ac:11:00:03)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        Address: 02:42:29:df:9a:ef (02:42:29:df:9a:ef)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 146.231.121.130 (146.231.121.130), Dst: 172.17.0.3 (172.17.0.3)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 407
+    Identification: 0x820d (33293)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 63
+    Protocol: UDP (17)
+    Header checksum: 0x3fbb [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 146.231.121.130 (146.231.121.130)
+    Destination: 172.17.0.3 (172.17.0.3)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: sip (5060), Dst Port: sip (5060)
+    Source port: sip (5060)
+    Destination port: sip (5060)
+    Length: 387
+    Checksum: 0x5ba0 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Session Initiation Protocol (ACK)
+    Request-Line: ACK sip:greg3@rp.rucus.me SIP/2.0
+        Method: ACK
+        Request-URI: sip:greg3@rp.rucus.me
+            Request-URI User Part: greg3
+            Request-URI Host Part: rp.rucus.me
+        [Resent Packet: False]
+        [Request Frame: 11]
+        [Response Time (ms): 0]
+    Message Header
+        Via: SIP/2.0/UDP 146.231.121.130;branch=z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+            Transport: UDP
+            Sent-by Address: 146.231.121.130
+            Branch: z9hG4bK2e8.f55aa37bb730b7219388663408461fc1.0
+        Max-Forwards: 69
+        From: <sip:greg@s11pd011-19.ict.ru.ac.za>;tag=822507cc-c010-4dde-872d-dcf6249c0d60
+            SIP from address: sip:greg@s11pd011-19.ict.ru.ac.za
+                SIP from address User Part: greg
+                SIP from address Host Part: s11pd011-19.ict.ru.ac.za
+            SIP from tag: 822507cc-c010-4dde-872d-dcf6249c0d60
+        To: <sip:greg3@rp.rucus.me>;tag=4d50a83c5e9b05349d85c6f18723afcc-6a16
+            SIP to address: sip:greg3@rp.rucus.me
+                SIP to address User Part: greg3
+                SIP to address Host Part: rp.rucus.me
+            SIP to tag: 4d50a83c5e9b05349d85c6f18723afcc-6a16
+        Call-ID: a905b6f9-f5b6-4b04-be45-bbc2005f85c0
+        CSeq: 8217 ACK
+            Sequence Number: 8217
+            Method: ACK
+        Content-Length: 0
+

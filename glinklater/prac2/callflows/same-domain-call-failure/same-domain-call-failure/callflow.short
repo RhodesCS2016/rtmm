@@ -1,0 +1,11 @@
+# Alice attempts to call Bob; but misspells his username.
+  1 146.231.126.7 Alice   1 172.17.0.3   Local-Kamailio SIP/SDP Request: INVITE sip:not-bob@rp.rucus.me | 
+# Proxy requires authentication.
+  2   172.17.0.3 Local-Kamailio   2 146.231.126.7 Alice SIP Status: 407 Proxy Authentication Required | 
+  3 146.231.126.7 Alice   3 172.17.0.3   Local-Kamailio SIP Request: ACK sip:not-bob@rp.rucus.me | 
+# Alice resends the request with authentication.
+  4 146.231.126.7 Alice   4 172.17.0.3   Local-Kamailio SIP/SDP Request: INVITE sip:not-bob@rp.rucus.me | 
+# Proxy has no such user registered
+  5   172.17.0.3 Local-Kamailio   5 146.231.126.7 Alice SIP Status: 404 Not Found | 
+# Alice acknowledges that no user was found.
+  6 146.231.126.7 Alice   6 172.17.0.3   Local-Kamailio SIP Request: ACK sip:not-bob@rp.rucus.me | 

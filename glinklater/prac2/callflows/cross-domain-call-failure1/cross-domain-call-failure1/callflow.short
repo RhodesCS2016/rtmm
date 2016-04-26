@@ -1,0 +1,16 @@
+# Alice tries to make a call to Bob (who is registered on another domain); however she mistypes his name.
+  1 146.231.126.7 Alice   1 172.17.0.3 Local-Kamailio SIP/SDP Request: INVITE sip:not-bob@s11pd011-19.ict.ru.ac.za | 
+  2   172.17.0.3 Local-Kamailio   2 146.231.126.7 Alice SIP Status: 407 Proxy Authentication Required | 
+  3 146.231.126.7 Alice   3 172.17.0.3 Local-Kamailio SIP Request: ACK sip:not-bob@s11pd011-19.ict.ru.ac.za | 
+# Resend INVITE with authentication.
+  4 146.231.126.7 Alice   4 172.17.0.3 Local-Kamailio SIP/SDP Request: INVITE sip:not-bob@s11pd011-19.ict.ru.ac.za | 
+  5   172.17.0.3 Local-Kamailio   5 146.231.126.7 Alice SIP Status: 100 trying -- your call is important to us | 
+# Forward request to Bob's proxy
+  6   172.17.0.3 Local-Kamailio   6 146.231.121.130 Extern-Kamailio SIP/SDP Request: INVITE sip:not-bob@s11pd011-19.ict.ru.ac.za | 
+# User is not found.
+  7 146.231.121.130 Extern-Kamailio   7 172.17.0.3 Local-Kamailio SIP Status: 404 Not Found | 
+  8   172.17.0.3 Local-Kamailio   8 146.231.121.130 Extern-Kamailio SIP Request: ACK sip:not-bob@s11pd011-19.ict.ru.ac.za | 
+# Alice's proxy notifies her that the user she has requested is not registered on the specified domain.
+  9   172.17.0.3 Local-Kamailio   9 146.231.126.7 Alice SIP Status: 404 Not Found | 
+# Alice's device acknowledges that she has been notified.
+ 10 146.231.126.7 Alice  10 172.17.0.3 Local-Kamailio SIP Request: ACK sip:not-bob@s11pd011-19.ict.ru.ac.za | 

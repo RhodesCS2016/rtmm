@@ -1,0 +1,11 @@
+# Same as Cross Domain Callflow - Failed Call 1
+  1 146.231.126.7 Bob   1 146.231.121.130 Extern-Kamailio SIP/SDP Request: INVITE sip:not-alice@rp.rucus.me | 
+  2 146.231.121.130 Extern-Kamailio   2 146.231.126.7 Bob SIP Status: 407 Proxy Authentication Required | 
+  3 146.231.126.7 Bob   3 146.231.121.130 Extern-Kamailio SIP Request: ACK sip:not-alice@rp.rucus.me | 
+  4 146.231.126.7 Bob   4 146.231.121.130 Extern-Kamailio SIP/SDP Request: INVITE sip:not-alice@rp.rucus.me | 
+  5 146.231.121.130 Extern-Kamailio   5 146.231.126.7 Bob SIP Status: 100 trying -- your call is important to us | 
+  6 146.231.121.130 Extern-Kamailio  11 172.17.0.3 Local-Kamailio SIP/SDP Request: INVITE sip:not-alice@rp.rucus.me | 
+  7   172.17.0.3 Local-Kamailio  12 146.231.121.130 Extern-Kamailio SIP Status: 404 Not Found | 
+  8 146.231.121.130 Extern-Kamailio  13 172.17.0.3 Local-Kamailio SIP Request: ACK sip:not-alice@rp.rucus.me | 
+  9 146.231.121.130 Extern-Kamailio   9 146.231.126.7 Bob SIP Status: 404 Not Found | 
+ 10 146.231.126.7 Bob  10 146.231.121.130 Extern-Kamailio SIP Request: ACK sip:not-alice@rp.rucus.me | 

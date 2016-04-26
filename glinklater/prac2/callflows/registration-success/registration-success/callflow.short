@@ -1,0 +1,8 @@
+  # Alice attempts to register with her local kamailio proxy.
+  1 146.231.126.7 Alice   1 172.17.0.3   Local-Kamailio SIP Request: REGISTER sip:rp.rucus.me    (fetch bindings) | 
+  # Proxy requires authentication
+  2   172.17.0.3 Local-Kamailio   2 146.231.126.7 Alice SIP Status: 401 Unauthorized    (0 bindings) | 
+  # Alice attempts to register again; this time with authentication.
+  3 146.231.126.7 Alice   3 172.17.0.3   Local-Kamailio SIP Request: REGISTER sip:rp.rucus.me    (fetch bindings) | 
+  # Proxy accepts Alice's REGISTER request and replies 200 OK!
+  4   172.17.0.3 Local-Kamailio   4 146.231.126.7 Alice SIP Status: 200 OK    (0 bindings) | 

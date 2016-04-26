@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- lookup['146.231.126.7:Alice'] = 0 -->
+<!-- lookup['172.17.0.3:Local-Kamailio'] = 1 -->
+<!-- lookup['146.231.126.7:Bob'] = 2 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="796" viewBox="0 0 600 796">
+<defs>
+<style type="text/css"><![CDATA[
+ .traceline { stroke-width: 1pt; stroke:black; }
+ .pkt-text { color: red; font-family: Trebuchet MS,Helvetica, sans-serif;
+            font-size: 8pt; stroke: none; fill: black;}
+ .comment-text { color: black; font-family: Trebuchet MS,Helvetica, sans-serif;
+            font-size: 9pt; font-style: italic; stroke: none; fill: green;}
+ .host-text { color: black; font-family: Trebuchet MS,Helvetica,sans-serif;
+             font-size: 10pt; stroke:none; fill:blue;}
+ .title-text { color: black; font-family: Trebuchet MS,Helvetica,sans-serif;
+              font-size:16pt; stroke:none; fill:black;}
+ .label { color: blue; text-anchor: middle ; }
+ .arrowhead { stroke-width: 0.5pt;stroke:black; }
+ .element-line { stroke-width: 0.25pt; stroke: black; }
+ .link { color: blue; font-family: Trebuchet MS,Helvetica, sans-serif;
+		font-size: 9pt; text-decoration: underline; fill: blue;}
+ ]]></style>
+</defs>
+<text x="300" y="25" class="label title-text">Standard Callflow - Success</text>
+<text x="100" y="58" class="label host-text">146.231.126.7:Alice</text>
+<line x1="100" y1="60" x2="100" y2="796" class="element-line" />
+<text x="300" y="43" class="label host-text">172.17.0.3:Local-Kamailio</text>
+<line x1="300" y1="60" x2="300" y2="796" class="element-line" />
+<text x="500" y="58" class="label host-text">146.231.126.7:Bob</text>
+<line x1="500" y1="60" x2="500" y2="796" class="element-line" />
+<text x="50" y="84" class="comment-text"> Alice sends an INVITE request to the proxy for Bob</text>
+<text x="50" y="108" class="pkt-text">1</text>
+<line x1="100" y1="108" x2="300" y2="108" class="traceline" style="stroke: black;"/>
+<polygon points="300,108 295,105 297,108 295,111" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame1.html" target="_blank">
+<text x="110" y="104" class="pkt-text"> INVITE sip:bob@rp.rucus.me |</text>
+</a>
+<text x="50" y="132" class="comment-text"> Proxy requires authentication.</text>
+<text x="50" y="156" class="pkt-text">2</text>
+<line x1="300" y1="156" x2="100" y2="156" class="traceline" style="stroke: black;"/>
+<polygon points="100,156 105,153 103,156 105,159" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame2.html" target="_blank">
+<text x="110" y="152" class="pkt-text"> 407 Proxy Authentication Required |</text>
+</a>
+<text x="50" y="180" class="pkt-text">3</text>
+<line x1="100" y1="180" x2="300" y2="180" class="traceline" style="stroke: black;"/>
+<polygon points="300,180 295,177 297,180 295,183" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame3.html" target="_blank">
+<text x="110" y="176" class="pkt-text"> ACK sip:bob@rp.rucus.me |</text>
+</a>
+<text x="50" y="204" class="comment-text"> Alice resends with authentication.</text>
+<text x="50" y="228" class="pkt-text">4</text>
+<line x1="100" y1="228" x2="300" y2="228" class="traceline" style="stroke: black;"/>
+<polygon points="300,228 295,225 297,228 295,231" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame4.html" target="_blank">
+<text x="110" y="224" class="pkt-text"> INVITE sip:bob@rp.rucus.me |</text>
+</a>
+<text x="50" y="252" class="pkt-text">5</text>
+<line x1="300" y1="252" x2="100" y2="252" class="traceline" style="stroke: black;"/>
+<polygon points="100,252 105,249 103,252 105,255" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame5.html" target="_blank">
+<text x="110" y="248" class="pkt-text"> 100 trying -- your call is important to us |</text>
+</a>
+<text x="50" y="276" class="comment-text"> Proxy forwards request</text>
+<text x="50" y="300" class="pkt-text">6</text>
+<line x1="300" y1="300" x2="500" y2="300" class="traceline" style="stroke: black;"/>
+<polygon points="500,300 495,297 497,300 495,303" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame6.html" target="_blank">
+<text x="310" y="296" class="pkt-text"> INVITE sip:bob@146.231.126.7:5063 |</text>
+</a>
+<text x="50" y="324" class="comment-text"> Bob's device recieves request and notifies proxy that it is ringing...</text>
+<text x="50" y="348" class="pkt-text">7</text>
+<line x1="500" y1="348" x2="300" y2="348" class="traceline" style="stroke: black;"/>
+<polygon points="300,348 305,345 303,348 305,351" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame7.html" target="_blank">
+<text x="310" y="344" class="pkt-text"> 100 Trying |</text>
+</a>
+<text x="50" y="372" class="pkt-text">8</text>
+<line x1="500" y1="372" x2="300" y2="372" class="traceline" style="stroke: black;"/>
+<polygon points="300,372 305,369 303,372 305,375" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame8.html" target="_blank">
+<text x="310" y="368" class="pkt-text"> 180 Ringing |</text>
+</a>
+<text x="50" y="396" class="comment-text"> ... which in turn notifies Alice that Bob's phone is ringing.</text>
+<text x="50" y="420" class="pkt-text">9</text>
+<line x1="300" y1="420" x2="100" y2="420" class="traceline" style="stroke: black;"/>
+<polygon points="100,420 105,417 103,420 105,423" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame9.html" target="_blank">
+<text x="110" y="416" class="pkt-text"> 180 Ringing |</text>
+</a>
+<text x="50" y="444" class="comment-text"> Bob accepts the call on his device</text>
+<text x="50" y="468" class="pkt-text">10</text>
+<line x1="500" y1="468" x2="300" y2="468" class="traceline" style="stroke: black;"/>
+<polygon points="300,468 305,465 303,468 305,471" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame10.html" target="_blank">
+<text x="310" y="464" class="pkt-text"> 200 OK |</text>
+</a>
+<text x="50" y="492" class="comment-text"> Bob's acceptance is passed downstream to Alice</text>
+<text x="50" y="516" class="pkt-text">11</text>
+<line x1="300" y1="516" x2="100" y2="516" class="traceline" style="stroke: black;"/>
+<polygon points="100,516 105,513 103,516 105,519" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame11.html" target="_blank">
+<text x="110" y="512" class="pkt-text"> 200 OK |</text>
+</a>
+<text x="50" y="540" class="comment-text"> Alice acknowledges that Bob has picked up his device.</text>
+<text x="50" y="564" class="pkt-text">12</text>
+<line x1="100" y1="564" x2="300" y2="564" class="traceline" style="stroke: black;"/>
+<polygon points="300,564 295,561 297,564 295,567" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame12.html" target="_blank">
+<text x="110" y="560" class="pkt-text"> ACK sip:bob@146.231.126.7:5063 |</text>
+</a>
+<text x="50" y="588" class="pkt-text">13</text>
+<line x1="300" y1="588" x2="500" y2="588" class="traceline" style="stroke: black;"/>
+<polygon points="500,588 495,585 497,588 495,591" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame13.html" target="_blank">
+<text x="310" y="584" class="pkt-text"> ACK sip:bob@146.231.126.7:5063 |</text>
+</a>
+<text x="50" y="612" class="comment-text"> Conversation happens here...</text>
+<text x="50" y="636" class="comment-text"> Bob terminates their session.</text>
+<text x="50" y="660" class="pkt-text">14</text>
+<line x1="500" y1="660" x2="300" y2="660" class="traceline" style="stroke: black;"/>
+<polygon points="300,660 305,657 303,660 305,663" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame14.html" target="_blank">
+<text x="310" y="656" class="pkt-text"> BYE sip:alice@146.231.126.7:5064 |</text>
+</a>
+<text x="50" y="684" class="pkt-text">15</text>
+<line x1="300" y1="684" x2="100" y2="684" class="traceline" style="stroke: black;"/>
+<polygon points="100,684 105,681 103,684 105,687" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame15.html" target="_blank">
+<text x="110" y="680" class="pkt-text"> BYE sip:alice@146.231.126.7:5064 |</text>
+</a>
+<text x="50" y="708" class="comment-text"> Alice acknowledges that the session is terminated.</text>
+<text x="50" y="732" class="pkt-text">16</text>
+<line x1="100" y1="732" x2="300" y2="732" class="traceline" style="stroke: black;"/>
+<polygon points="300,732 295,729 297,732 295,735" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame16.html" target="_blank">
+<text x="110" y="728" class="pkt-text"> 200 OK |</text>
+</a>
+<text x="50" y="756" class="pkt-text">17</text>
+<line x1="300" y1="756" x2="500" y2="756" class="traceline" style="stroke: black;"/>
+<polygon points="500,756 495,753 497,756 495,759" class="arrowhead" style="fill: black; stroke: black;"/>
+<a href="frames/Frame17.html" target="_blank">
+<text x="310" y="752" class="pkt-text"> 200 OK |</text>
+</a>
+</svg>

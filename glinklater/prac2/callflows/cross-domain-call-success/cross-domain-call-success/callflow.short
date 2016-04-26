@@ -1,0 +1,35 @@
+# Alice sends an INVITE request for Bob to her Local Kamailio Proxy
+  1 146.231.126.7 Alice   7 172.17.0.3   Local-Kamailio SIP/SDP Request: INVITE sip:bob@s11pd011-19.ict.ru.ac.za | 
+# Proxy rejects due to Authentication being required (407). Alice replies with an ACK.
+  2   172.17.0.3 Local-Kamailio   8 146.231.126.7 Alice SIP Status: 407 Proxy Authentication Required | 
+  3 146.231.126.7 Alice   9 172.17.0.3   Local-Kamailio SIP Request: ACK sip:bob@s11pd011-19.ict.ru.ac.za | 
+# Alice sends new INVITE request to Local Proxy with Authentication in headers.
+  4 146.231.126.7 Alice  10 172.17.0.3   Local-Kamailio SIP/SDP Request: INVITE sip:bob@s11pd011-19.ict.ru.ac.za | 
+  5   172.17.0.3 Local-Kamailio  11 146.231.126.7 Alice SIP Status: 100 trying -- your call is important to us | 
+# Proxy determines that the request is outside of it's domain and forwards the request to the proxy at the given address.
+  6   172.17.0.3 Local-Kamailio  12 146.231.121.130 Extern-Kamailio SIP/SDP Request: INVITE sip:bob@s11pd011-19.ict.ru.ac.za | 
+  7 146.231.121.130 Extern-Kamailio  13 172.17.0.3   Local-Kamailio SIP Status: 100 trying -- your call is important to us | 
+# External Kamailio Proxy looks up the registered user (Bob) and forwards the INVITE to Bob's device.
+  8 146.231.121.130 Extern-Kamailio   3 146.231.126.7 Bob SIP/SDP Request: INVITE sip:bob@146.231.126.7:5063 | 
+  9 146.231.126.7 Bob   4 146.231.121.130 Extern-Kamailio SIP Status: 100 Trying | 
+# Bob's device replies that it is attempting to get the attention of the user.
+ 10 146.231.126.7 Bob   5 146.231.121.130 Extern-Kamailio SIP Status: 180 Ringing | 
+ 11 146.231.121.130 Extern-Kamailio  14 172.17.0.3   Local-Kamailio SIP Status: 180 Ringing | 
+ 12   172.17.0.3 Local-Kamailio  15 146.231.126.7 Alice SIP Status: 180 Ringing |
+# Bob picks his device and accepts the request.
+ 13 146.231.126.7 Bob  18 146.231.121.130 Extern-Kamailio SIP/SDP Status: 200 OK | 
+ 14 146.231.121.130 Extern-Kamailio  16 172.17.0.3   Local-Kamailio SIP/SDP Status: 200 OK | 
+ 15   172.17.0.3 Local-Kamailio  17 146.231.126.7 Alice SIP/SDP Status: 200 OK | 
+# Alice's device acknowledges that it has been notified that Bob has accepted the request.
+ 16 146.231.126.7 Alice  22 172.17.0.3   Local-Kamailio SIP Request: ACK sip:bob@146.231.126.7:5063 | 
+ 17   172.17.0.3 Local-Kamailio  23 146.231.121.130 Extern-Kamailio SIP Request: ACK sip:bob@146.231.126.7:5063 | 
+ 18 146.231.121.130 Extern-Kamailio  21 146.231.126.7 Bob SIP Request: ACK sip:bob@146.231.126.7:5063 | 
+# Conversation happens here.
+# Bob terminates the session. His device sends a BYE request via his proxy (Extern-Kamailio)
+ 19 146.231.126.7 Bob  24 146.231.121.130 Extern-Kamailio SIP Request: BYE sip:alice@146.231.126.7:5065 | 
+ 20 146.231.121.130 Extern-Kamailio  28 172.17.0.3   Local-Kamailio SIP Request: BYE sip:alice@146.231.126.7:5065 | 
+ 21   172.17.0.3 Local-Kamailio  29 146.231.126.7 Alice SIP Request: BYE sip:alice@146.231.126.7:5065 | 
+# Alice's device acknowledges that she has been notified that Bob has terminated the session.
+ 22 146.231.126.7 Alice  30 172.17.0.3   Local-Kamailio SIP Status: 200 OK | 
+ 23   172.17.0.3 Local-Kamailio  31 146.231.121.130 Extern-Kamailio SIP Status: 200 OK | 
+ 24 146.231.121.130 Extern-Kamailio  27 146.231.126.7 Bob SIP Status: 200 OK | 
