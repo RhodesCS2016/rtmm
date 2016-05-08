@@ -1,0 +1,70 @@
+<?xml version=”1.0” encoding=“ISO-8859-1” ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Register Scenario">
+
+  <send retrans="500" start_rtd="register-noauth">
+    <![CDATA[
+
+      REGISTER sip:[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sipp <sip:[field0]@[local_ip]:[local_port]>;tag=[pid]SIPpTag00[call_number]
+      To: [service] <sip:[field0]@[remote_ip]:[remote_port]>
+      Call-ID: [call_id]
+      CSeq: 1 REGISTER
+      Contact: sip:[field0]@[local_ip]:[local_port]
+      Max-Forwards: 70
+      Expires: 3600
+      Subject: Performance Test
+      Content-Length: [len]
+
+    ]]>
+  </send>
+
+  <recv response="401" auth="true" crlf="true" rtd="register-noauth"></recv>
+
+  <send retrans="500" start_rtd="register">
+    <![CDATA[
+
+      REGISTER sip:[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sipp <sip:[field0]@[local_ip]:[local_port]>;tag=[pid]SIPpTag00[call_number]
+      To: [service] <sip:[field0]@[remote_ip]:[remote_port]>
+      Call-ID: [call_id]
+      CSeq: 2 REGISTER
+      Contact: sip:[field0]@[local_ip]:[local_port]
+      [field1]
+      Max-Forwards: 70
+      Expires: 3600
+      Subject: Performance Test
+      Content-Length: [len]
+
+    ]]>
+  </send>
+
+  <recv response="200" auth="true" crlf="true" rtd="register"></recv>
+
+  <send retrans="500" start_rtd="deregister">
+    <![CDATA[
+
+      REGISTER sip:[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sipp <sip:[field0]@[local_ip]:[local_port]>;tag=[pid]SIPpTag00[call_number]
+      To: [service] <sip:[field0]@[remote_ip]:[remote_port]>
+      Call-ID: [call_id]
+      CSeq: 3 REGISTER
+      Contact: sip:[field0]@[local_ip]:[local_port]
+      Max-Forwards: 70
+      Expires: 0
+      Subject: Performance Test
+      Content-Length: [len]
+
+    ]]>
+  </send>
+
+  <recv response="401" auth="true" crlf="true" rtd="deregister"></recv>
+
+  <ResponseTimeRepartition value="10,20,30,40,50,75,100,150,200,300"/>
+  <CallLengthRepartition value="10,20,30,40,50,75,100,150,200,300"/>
+
+</scenario>
